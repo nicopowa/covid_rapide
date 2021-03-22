@@ -1,0 +1,5 @@
+![fill_form](https://nicopowa.github.com/covid_rapide/patch/img/ios/1.jpg)
+![click_export](https://nicopowa.github.com/covid_rapide/patch/img/ios/2.jpg)
+![add_homescreen](https://nicopowa.github.com/covid_rapide/patch/img/ios/3.jpg)
+![confirm_homescreen](https://nicopowa.github.com/covid_rapide/patch/img/ios/4.jpg)
+![all_set](https://nicopowa.github.com/covid_rapide/patch/img/ios/5.jpg)

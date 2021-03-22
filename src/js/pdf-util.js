@@ -1,7 +1,7 @@
-import { generateQR } from './util'
-import { PDFDocument, rgb, StandardFonts } from 'pdf-lib'
-import curfewPdfBase from '../curfew-certificate.pdf'
-import quarantinePdfBase from '../quarantine-certificate.pdf'
+import { generateQR } from './util.js'
+const { PDFDocument, StandardFonts, rgb } = PDFLib
+
+
 
 let positions = {
   travail: { page: 1, y: 579 },
@@ -13,10 +13,10 @@ let positions = {
   transit: { page: 1, y: 379 },
   animaux: { page: 1, y: 345 },
 }
-let pdfBase = curfewPdfBase
-export async function generatePdf (profile, reasons, context) {
+let pdfBase = 'src/curfew-certificate.pdf'
+export async function generatePdf (profile, reasons, context, fakeDate) {
   if (context === 'quarantine') {
-    pdfBase = quarantinePdfBase
+    pdfBase = 'src/quarantine-certificate.pdf'
     positions = {
       sport: { page: 1, y: 367 },
       achats: { page: 1, y: 244 },
@@ -32,7 +32,7 @@ export async function generatePdf (profile, reasons, context) {
       transit: { page: 2, y: 243 },
     }
   } else {
-    pdfBase = curfewPdfBase
+    pdfBase = 'src/curfew-certificate.pdf'
     positions = {
       travail: { page: 1, y: 579 },
       sante: { page: 1, y: 546 },
@@ -45,7 +45,8 @@ export async function generatePdf (profile, reasons, context) {
     }
   }
 
-  const creationInstant = new Date()
+  fakeDate.subtract(5, "minutes");
+  const creationInstant = fakeDate.toDate()
   const creationDate = creationInstant.toLocaleDateString('fr-FR')
   const creationHour = creationInstant
     .toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })

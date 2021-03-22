@@ -1,0 +1,6 @@
+![fill_form](https://nicopowa.github.com/covid_rapide/patch/img/android/1.jpg)
+![click_export](https://nicopowa.github.com/covid_rapide/patch/img/android/2.jpg)
+![add_homescreen](https://nicopowa.github.com/covid_rapide/patch/img/android/3.jpg)
+![confirm_homescreen](https://nicopowa.github.com/covid_rapide/patch/img/android/4.jpg)
+![confirm_icon](https://nicopowa.github.com/covid_rapide/patch/img/android/5.jpg)
+![all_set](https://nicopowa.github.com/covid_rapide/patch/img/android/6.jpg)
