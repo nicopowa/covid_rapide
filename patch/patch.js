@@ -37,19 +37,14 @@ const genSelect = (name, prompt) => {
 
 	let options = name === "motif" ?
 	[
-		"sport", 
-		"achats", 
-		"enfants", 
-		"culte_culturel", 
-		"demarche", 
 		"travail", 
+		"animaux", 
 		"sante", 
 		"famille", 
-		"handicap", 
-		"judiciaire", 
-		"missions", 
+		"convocation_demarches", 
 		"demenagement", 
-		"transit"
+		"achats_culte_culturel", 
+		"sport"
 	] 
 	: 
 	[
